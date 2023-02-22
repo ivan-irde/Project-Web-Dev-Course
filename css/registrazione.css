@@ -1,0 +1,108 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: black;
+}
+
+.bg{
+    background-color: lightgrey;
+    height: 100vh;
+    position: relative;
+}
+
+.format{
+    width: 30%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 30px;
+}
+
+header{
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    margin-bottom: 1rem;  
+}
+
+.form{
+    width: 70%;
+}
+
+.form input{
+    width: 100%;
+    margin: 10px;
+    border: 0;
+    border-bottom: 2px solid grey;
+    height: 2rem;
+    margin-left: auto;
+}
+
+
+.form a:last-child{
+    color: red;
+}
+
+.form2{
+    width: 75%;
+    margin: auto;
+    padding: 1.5rem;
+
+}
+
+.form2 input{
+    margin: 10px;
+    border-bottom: 2px solid grey;
+    display: inline-block;
+}
+
+.form2 p{
+    display: inline;
+    
+}
+
+.submit{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.submit input{
+    margin: auto;
+    width: 40%;
+    background-color: rgba(255, 0, 0, 0.6);
+    border-radius: 40px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.submit input:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.login-link{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.login-link p,a{
+    display: inline-block;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .format{
+        width:90%;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM | Il mondo delle Japan car</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html"><img src="img/logo.png" style="max-width: 100%;" alt=""></a>
+        </div> 
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="login"><a href="login.html">Login/Register</a></li>
+          </ul>
+        </div>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+            toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            })
+        </script>
+      </nav>
+        <!-- MAIN -->
+        <main class="main">
+            <!-- Video -->
+            <div class="vid" style="height: 100vh;">
+                <video width="100%" height="100%" autoplay loop muted src="video/main.mp4" class="bg-video"></video>
+                <div class="fade"></div>
+                <div class="video-title">JDM: <span>J</span>apan <span>D</span>omestic <span>M</span>arket </div>
+            </div>
+
+            <!-- DESCRIZIONE JDM -->
+            <div class="paragraph reveal">
+                <p>Il termine <strong><span>J</span>apan <span>D</span>omestic <span>M</span>arket (<span>JDM</span>)</strong> è utilizzato per riferirsi al mercato interno giapponese in relazione a merci di vario tipo.<br>
+                    In particolare, nel campo automobilistico, gli appassionati utilizzano l'acronimo <strong>JDM</strong> per identificare i veicoli destinati alla vendita nel mercato interno giapponese e che quindi hanno una serie di caratteristiche peculiari studiate specificamente per quel paese.<br>
+                     Negli ultimi anni la popolarità delle auto JDM all'interno degli Stati Uniti e dell'Europa si è sviluppata significativamente come conseguenza dell'onda del tuning.
+                </p>
+            </div>
+
+            <!-- IMMAGINI AUTO CON LINKS -->
+
+            <div class="paragraph reveal">
+                <div class="sub-title">
+                    <p>Ecco alcuni modelli...</p>
+                    <p>Scegline una!!!</p>
+                </div>
+                <div class="car-link reveal">
+                    <img src="img/supra1.jpg" style="max-width: 100%;">
+                    <a href="supra.html" target="_blank">
+                    <div class="fade">
+                        <div class="video-title"><span>T</span>oyota <span>S</span>upra</a></div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="car-link reveal">
+                    <img src="img/skyline1.jpg" style="max-width: 100%;">
+                    <a href="supra.html" target="_blank">
+                    <div class="fade">
+                        <div class="video-title"><span>N</span>issan <span>S</span>kyline</a></div>
+                    </div>
+                    </a>
+                </div>
+
+                <div class="car-link reveal">
+                    <img src="img/rx7.jpg" style="max-width: 100%;">
+                    <a href="supra.html" target="_blank">
+                    <div class="fade">
+                        <div class="video-title"><span>M</span>azda <span>R</span>X-7</a></div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <!-- NEWSLETTER by Marta Sara Mele -->
+            <div class="paragraph reveal">
+                <div class="description">
+                    <p>Per rimanere sempre aggiornati sull'evoluzione del sito iscriviti alla newsletter!</p>
+                </div>
+                <div class="newsletter reveal">
+                    <div id="titolo">
+                        <h4>Inserisci le tue credenziali.</h4>
+                    </div>    
+                    <form action="form">
+                        <div class="titolo2">
+                            <h3>Nome</h3>
+                            <input type="text" name="Name" required><br/>
+                            <h3>Cognome</h3>
+                            <input type="text" name="Surname" required><br/>
+                            <h3>Indirizzo e-mail</h3>
+                            <input type="email" name="Email Address" required><br/>
+                        </div>
+                        <br>
+                        <div class="terms">
+                            <input type="checkbox" required>
+                            <p>I agree to receive e-mails from your company and your terms and conditions.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="titolo3">
+                            <input id="submit" type="submit" value="Sign Me Up"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <footer>
+                <div class="footer-left">
+                    <img src="img/logo.png">
+                </div>
+                <div class="footer-right">
+                    <div class="text-footer">
+                        <p>by Ivan Irde</p>
+                        <p>and</p>
+                        <p>Marta Sara Mele</p>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script>ScrollReveal().reveal('.reveal', { delay: 250, distance: '10px', duration: 1000});</script>
+</body>
+</html>

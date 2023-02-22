@@ -1,0 +1,407 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+}
+body{
+    background-color: lightgrey;
+}
+a{
+    text-decoration: none;
+    font-style: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+span{
+    color: red;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+/* NAV BAR */
+.navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    background-color: rgba(39, 39, 39, 0.8);
+    backdrop-filter: blur(5px);
+    height: 4.5rem;
+    z-index: 999;
+}
+.brand-title {
+    width: 10rem;
+    position: absolute;
+    top: 50%;
+    left: .5rem;
+    transform: translateY(-50%);
+}
+.navbar-links:not(#login) {
+    height: 100%;
+}
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.navbar-links li {
+    list-style: none;
+    height: fit-content;
+}
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: .8rem;
+    margin-top: .8rem;
+    font-size: 1rem;
+    width: 9rem;
+    text-align: center;
+    border-radius: 40px;
+}
+.navbar-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+}
+.toggle-button {
+    position: absolute;
+    top: .6rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+#login{
+    position: absolute;
+    right: .5rem;
+    top: 0rem;
+}
+#login a{
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+}
+#login a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    color:black;
+}
+#home{
+    background-color:  rgba(255, 0, 0, 0.5);
+}
+#home:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* MAIN */
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 4.5rem;
+    font-size: 60px;
+}
+
+/* Video */
+.vid{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+.bg-video{
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+.fade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.video-title{
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    word-wrap: break-word;
+    font-size: 5rem;
+}
+/* PARAGRAFO */
+.paragraph{
+    width: 80%;
+    font-size: 1.5rem;
+    height: auto;
+    overflow: auto;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 40px;
+}
+.sub-title{
+    margin: auto;
+    font-size: 1.5rem;
+    width: 40%;
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 30px;
+    color: black;
+    padding: 20px;
+    font-weight: bold;
+}
+/* SCELTA DI AUTO DA VEDERE */
+.car-link{
+    width: 80%;
+    height: 30rem;
+    margin: auto;
+    margin-top: 40px;
+    position: relative;
+}
+.car-link .fade{
+    border-radius: 30px;
+}
+.car-link img{
+    border-radius: 30px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.car-link .video-title{ 
+    display: none;
+}
+.car-link .fade:hover{
+    backdrop-filter: blur(5px);
+}
+.car-link:hover .video-title{
+    font-weight: bolder;
+    display: inline;
+}
+.newsletter{
+    width: 80%;
+    margin-top: 2rem;
+}
+
+/* FOOTER */
+footer{
+    display: block;
+    height: 20vh;
+    width: 100%;
+    background-color: rgba(39, 39, 39, 0.8) ;
+    font-size: 0;
+}
+
+
+.footer-left{
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    position: relative;
+}
+
+.footer-right{
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    position: relative;
+}
+
+.footer-left img{
+    max-width: 100%;
+    width: 60%;
+    padding: 2rem;
+    height: auto;
+    border-right: 1px solid lightgrey;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.text-footer{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1.5rem;
+}
+
+.text-footer p{
+    font-size: 2rem;
+}
+
+
+
+/* PAGINE AUTO */
+.format{
+    width: 95vw;
+    font-size: 1.3rem;
+    height: auto;
+    overflow: auto;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    position: relative;
+}
+
+.car-box{
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* GENERAL RESPONSIVE */
+@media only screen and (max-width: 900px){
+    .paragraph{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .description{
+        font-size: 1rem;
+        width: 90%;
+    }
+
+
+    .car-link{
+        width: 100%;
+    }
+
+    .car-link .video-title{ 
+        display: inline;
+        font-size: 2rem;
+    }
+
+    .video-title{
+        font-size: 3rem;
+    }
+
+    .sub-title{
+        width: 80%;
+    }
+    footer{
+        height: 15vh;
+    }
+    .footer-left img{
+        width: 90%;
+    }
+}
+
+/* NAVBAR RESPONSIVE */
+@media (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+
+    .toggle-button {
+        display: flex;
+        position: absolute;
+        top: 1.5rem;
+    }
+
+    .brand-title{
+        position: relative;
+        height: 3.5rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 3.2rem;
+        }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    #login{
+        position: static;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-links ul li a {
+        padding: .8rem 1rem;
+        width: 100%;
+        font-size: 1.3rem;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .navbar-links ul #login a{
+        border-radius: 0;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+

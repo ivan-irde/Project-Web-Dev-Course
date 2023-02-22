@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM | Toyota: Supra</title>
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="brand-title">
+            <a href="index.html"><img src="img/logo.png" style="max-width: 100%;" alt=""></a>
+        </div> 
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="index.html" id="home">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li id="login"><a href="login.html">Login/Register</a></li>
+          </ul>
+        </div>
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+            toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+            })
+        </script>
+      </nav>
+
+        <!-- MAIN -->
+        <main class="main">
+            <div class="vid">
+                <video width="100%" height="100%" autoplay loop muted src="video/supra 1280x300 online-video-cutter.mp4" class="bg-video"></video>
+                <div class="fade"></div>
+                <div class="video-title"><span>T</span>oyota: <span>S</span>upra MK IV</div>
+            </div>
+            <div class="format">
+                <div class="car-box">
+                    <p>La Toyota Supra è un'autovettura sportiva a trazione posteriore e motore anteriore prodotta dalla casa automobilistica giapponese Toyota dal 1978 al 2002 in quattro generazioni. Il nome è poi stato ripreso nel 2019 per una nuova vettura, la Toyota Supra (2019). Il design della prima Supra si ispira a quello della Toyota Celica, ma reso leggermente più longilineo e largo. A partire dalla metà del 1986, l'A70 Supra divenne un modello separato dalla Celica. A sua volta, la casa automobilistica smise di chiamare la vettura con il prefisso "Celica" ed iniziò ad usare "Supra". Grazie alla somiglianza e al passato in comune con la Celica, spesso le due vetture vengono scambiate tra di loro. Le prime tre generazioni di Supra sono state assemblate al Toyota Motor Corporation Tahara Plant di Tahara, mentre la quarta è stata assemblata al Motohara Plant di Toyota.</p>
+                </div>
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+        </main>
+</body>
+</html>
